@@ -1,0 +1,53 @@
+.book-cover-container {
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+
+.book-cover-content {
+  width: 250px;
+  height: 300px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+}
+
+.button-cover {
+  cursor: pointer;
+
+  transition: filter 1s;
+
+  &:hover {
+    filter: brightness(0.6);
+    .see-more-span {
+      visibility: visible;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+
+.see-more-span {
+  visibility: hidden;
+  rotate: 45deg;
+
+  font-size: 4rem;
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+  width: fit-content;
+  height: fit-content;
+
+  color: var(--primary);
+}
