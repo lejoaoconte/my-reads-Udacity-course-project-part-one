@@ -1,0 +1,91 @@
+.books-list-container {
+  position: relative;
+  width: 100%;
+
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.books-list {
+  width: 100%;
+  height: fit-content;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  gap: 50px;
+
+  overflow-x: auto;
+  list-style-type: none;
+
+  padding: 0 20px;
+  padding-bottom: 10px;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.button-scrool {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  top: calc(50% - 20px);
+  width: fit-content;
+  height: fit-content;
+
+  padding: 10px 15px;
+
+  border-radius: 100%;
+
+  cursor: pointer;
+
+  background: var(--background);
+  border: none;
+
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1.3rem;
+
+  transition: filter 1s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+
+  @media only screen and (hover: none) and (pointer: coarse) {
+    display: none;
+  }
+}
+
+.button-scrool-left {
+  left: -15px;
+}
+
+.button-scrool-right {
+  right: -15px;
+}

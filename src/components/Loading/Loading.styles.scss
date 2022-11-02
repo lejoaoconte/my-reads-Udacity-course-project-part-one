@@ -1,0 +1,50 @@
+.loading-container {
+  display: inline-block;
+  position: relative;
+
+  width: calc(100% - 5%);
+  height: fit-content;
+  animation: loading-container 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  padding-top: 150px;
+
+  div {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+
+    background: url("../../../public/logo.svg");
+    background-size: cover;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@keyframes loading-container {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
