@@ -2,7 +2,7 @@ import { useRef } from "react";
 
 import "./BooksList.styles.scss";
 
-import { BookCover } from "../BookCover";
+import { BookCover } from "components/BookCover";
 
 export function BooksList({
   books,

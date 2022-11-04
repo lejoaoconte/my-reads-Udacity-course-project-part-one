@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
+
 import ReactModal from "react-modal";
 
 import "./Home.styles.scss";
@@ -22,7 +24,7 @@ const customStyles = {
   },
 };
 
-export default function Home() {
+export function Home() {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -35,11 +37,9 @@ export default function Home() {
   const read = books.filter((book) => book.shelf === "read");
 
   useEffect(() => {
-    return () => {
-      setLoading(true);
-      getAllData();
-      document.title = "My Reads | Home";
-    };
+    setLoading(true);
+    getAllData();
+    document.title = "My Reads | Home";
   }, []);
 
   function getAllData() {
@@ -77,12 +77,8 @@ export default function Home() {
   if (loading) return <Loading />;
 
   return (
-    <div className="container">
-      <header className="header">
-        <img src="/logo.svg" alt="My Reads" />
-        <h1 className="Title">My Reads</h1>
-      </header>
-      <main className="main">
+    <>
+      <main className="main-home">
         <TitleSection title="Currently Reading" />
         <BooksList
           handleOpenCloseModal={handleOpenCloseModal}
@@ -103,6 +99,10 @@ export default function Home() {
         />
       </main>
 
+      <Link to="/books-search" className="button-add">
+        +
+      </Link>
+
       <ReactModal
         isOpen={isOpenModal}
         onRequestClose={handleOpenCloseModal}
@@ -117,6 +117,6 @@ export default function Home() {
           />
         ) : null}
       </ReactModal>
-    </div>
+    </>
   );
 }
