@@ -1,0 +1,83 @@
+.main-books-search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: fit-content;
+
+  gap: 20px;
+
+  padding: 30px;
+}
+
+.go-back {
+  text-decoration: none;
+
+  height: fit-content;
+
+  background: var(--primary);
+  color: var(--background);
+
+  font-size: 1.5rem;
+
+  border-radius: 5px;
+  padding: 0 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    &::after {
+      content: " Go Back";
+      margin-left: 10px;
+
+      animation: mymove 1s;
+      animation-fill-mode: forwards;
+
+      @keyframes mymove {
+        from {
+          font-size: 0;
+        }
+        to {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.form-search {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button {
+  font-size: 1.965rem;
+
+  padding: 6px 20px;
+
+  background: var(--border);
+  color: var(--background);
+  border: none;
+
+  padding: 7px 15px;
+  border-radius: 0 5px 5px 0;
+
+  transition: filter 1s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.empty-data {
+  margin: 0 auto;
+}

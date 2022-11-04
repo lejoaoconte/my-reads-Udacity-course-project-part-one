@@ -1,0 +1,45 @@
+.container-search {
+  width: 100%;
+  height: fit-content;
+
+  position: relative;
+
+  border: 1px solid var(--border);
+  border-radius: 5px 0 0 5px;
+
+  cursor: text;
+
+  &:focus-within > .label-search {
+    top: -12px;
+
+    font-size: 0.7rem;
+    background: var(--border);
+
+    padding: 3px 15px;
+    border-radius: 5px;
+
+    transition: all 1s;
+  }
+}
+
+.input-search {
+  width: 100%;
+  padding: 15px 20px;
+
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+
+  font-size: 1rem;
+}
+
+.label-search {
+  position: absolute;
+
+  font-size: 1rem;
+
+  top: 15px;
+  left: 20px;
+
+  cursor: text;
+}

@@ -1,6 +1,6 @@
 import "./BookDetails.styles.scss";
 
-import { BookCover } from "../BookCover";
+import { BookCover } from "components/BookCover";
 
 export function BookDetails({ bookDataModal, handleOpenCloseModal }) {
   function formatDate(date) {
