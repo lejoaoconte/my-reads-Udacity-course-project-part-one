@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+<div style="text-align:center;"><img src="https://raw.githubusercontent.com/lejoaoconte/my-reads-Udacity-course-project-part-one/0afa1edb9d4b968cd3b33595909cd7bf334f691e/public/logo.svg" width="150px"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Reads
 
-## Available Scripts
+That's the final project of module one of Udacity's React Course, involving concepts as React and SASS to develop. The API (src/services/api.js) it's don't developed by the creator of this project, it's provider by Udacity.
 
-In the project directory, you can run:
+The demonstration images could be seen below.
 
-### `yarn start`
+<div align="center">
+ <img width="450px" src="https://github.com/lejoaoconte/my-reads-Udacity-course-project-part-one/blob/main/public/Screenshot%20from%202022-11-05%2010-51-57.png?raw=true" alt="Demonstration 1" />
+ <img width="450px" src="https://github.com/lejoaoconte/my-reads-Udacity-course-project-part-one/blob/main/public/Screenshot%20from%202022-11-05%2010-52-27.png?raw=true" alt="Demonstration 2" />
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The ideia of application is creating a system as a personal shelf which will store the books in basically three classes: Read, Want To Read and Currently Reading, and we can change the book state and search for more books to put in my reads shlef.
 
-### `yarn test`
+The project was approved of Ucacity (before change the README) and I was able to pass to next module.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `yarn build`
+### Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Node.js version of this project is 16.14.2 and the follow libraries which are used are below:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+|      library      | version |
+|:-----------------:|:-------:|
+| form-serialize    |  0.7.2  |
+| sass              |  1.55.0 |
+| react             |  18.2.0 |
+| react-dom         |  18.2.0 |
+| date-fns          |  2.29.3 |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installing and Executing program
 
-### `yarn eject`
+If you decide to see the project its just to follow the sequences below:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+First of all clone the repository and enter in Visual Code your in your favorite code editor.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+git clone https://github.com/lejoaoconte/my-reads-Udacity-course-project-part-one.git
+cd my-reads-Udacity-course-project-part-one
+code .
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+After it it's necessary to install the packages:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+yarn install
+```
 
-## Learn More
+And finally run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+yarn dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+and access <http://localhost:3000>.
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+João Conte
+LinkedIn: [/in/lejoaoconte](https://www.linkedin.com/in/lejoaoconte/)
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the <a href="https://github.com/lejoaoconte/chat-app-complete/blob/main/LICENSE.md" target="_blank">LICENSE.md</a> file for details
